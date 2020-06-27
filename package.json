@@ -1,0 +1,21 @@
+{
+  "name": "bytebot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ByteBot has 256 possible responses.",
+  "main": "bytebot.js",
+  "homepage": "https://github.com/Drewman5000/ByteBot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Drewman5000/ByteBot"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Hyland",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0"
+  }
+}
