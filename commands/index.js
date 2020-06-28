@@ -1,4 +1,4 @@
 module.exports = {
 	Byte: require('./byte'),
-	Bytebot: require('./bit')
+	//Bytebot: require('./bit')
 };
