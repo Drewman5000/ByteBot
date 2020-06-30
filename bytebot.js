@@ -1,5 +1,5 @@
 require('dotenv').config();
-const prefix = require('./config.json');
+const { prefix, author } = require('./config.json');
 const Discord = require('discord.js');
 const bytebot = new Discord.Client();
 bytebot.commands = new Discord.Collection();
@@ -19,6 +19,13 @@ bytebot.on('ready', () => {
 
 bytebot.on('message', msg => {
   const args = msg.content.split(/\s+/);
+  for ( el of args ) {
+    for ( c of el ) {
+      if (c.toUpperCase() != c.toLowerCase() || c.codePointAt(0) > 127) {
+          c.toLowerCase;
+        }
+    }
+  }
   commandFilter = (arr, query) => {
     return arr.filter(function(el) {
       return el.toLowerCase().indexOf(query.toLowerCase()) !== -1
@@ -29,7 +36,8 @@ bytebot.on('message', msg => {
   for ( el of commands ) {
 
     if (el.substring(0, 1) == prefix) {
-      const command = el.substring(1).toLowerCase();
+
+      const command = el.substring(1);
       console.info(`Called command: ${command}`);
 
       if (!bytebot.commands.has(command)) return;
