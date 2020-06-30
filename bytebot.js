@@ -18,18 +18,28 @@ bytebot.on('ready', () => {
 });
 
 bytebot.on('message', msg => {
-  if (msg.content.substring(0, 1) == '!') {
-  const args = msg.content.substring(1).split(/\s+/);
-  const command = args.shift().toLowerCase();
-  console.info(`Called command: ${command}`);
+  const args = msg.content.split(/\s+/);
+  commandFilter = (arr, query) => {
+    return arr.filter(function(el) {
+      return el.toLowerCase().indexOf(query.toLowerCase()) !== -1
+    })
+  }
+  let commands = (commandFilter(args, prefix));
 
-  if (!bytebot.commands.has(command)) return;
+  for ( el of commands ) {
 
-    try {
-      bytebot.commands.get(command).execute(msg, args);
-    } catch (error) {
-      console.error(error);
-      msg.reply('There was an error trying to execute that command!');
-    };
+    if (el.substring(0, 1) == prefix) {
+      const command = el.substring(1).toLowerCase();
+      console.info(`Called command: ${command}`);
+
+      if (!bytebot.commands.has(command)) return;
+
+      try {
+        bytebot.commands.get(command).execute(msg, args);
+      } catch (error) {
+        console.error(error);
+        msg.reply('There was an error trying to execute that command!');
+      };
+    }
   }
 });
