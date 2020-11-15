@@ -1,9 +1,17 @@
 module.exports = {
 	name: 'help',
-	description: 'Magic Eight Ball Replies',
-	execute(msg, args) {
+	description: 'This Help Dialog',
+	execute(msg, list, prefix) {
 		//const options = require('./eightBallOptions.json');
-		let reply = "This will be a help dialog";
+		let helpPrint = '';
+		let sorted = Object.entries(list).sort((a, b) => a[0].localeCompare(b[0]));
+
+		for (const [key, value] of sorted) {
+			helpPrint += '\n Command:' + list[key].name + '\t\t\tDesription: ' + list[key].description;
+		}
+		
+		let reply = `Here are the commands:\n
+		Use the prefix  \`\`\``+prefix+`\`\`\`  infront of each command in chat! \n` + helpPrint;
 		
 		msg.channel.send(reply);
 	},
