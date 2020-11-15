@@ -22,7 +22,7 @@ bytebot.on("message", (msg) => {
   const message = msg.content;
   // const regex = /(!)(\b(bit|coin)\b)/ig;
   
-  for (item in bitbotCommands) {
+  for (item in bytebotCommands) {
     let commandTest = bytebotCommands[item].name.toLowerCase();
     let regexp = new RegExp("("+prefix+")(\\b("+commandTest+")\\b)","gi");
 
