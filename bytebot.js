@@ -42,7 +42,7 @@ bytebot.on("message", (msg) => {
           if (!bytebot.commands.has(command)) return;
 
           try {
-            bytebot.commands.get(command).execute(msg, args);
+            bytebot.commands.get(command).execute(msg);
           } catch (error) {
             console.error(error);
             msg.reply('There was an error trying to execute that command!');
