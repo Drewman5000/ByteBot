@@ -3,4 +3,5 @@ module.exports = {
 	Speak: require('./speak'),
 	EightBall: require('./eightBall'),
 	Help: require('./help'),
+	Coins: require('./coins'),
 };
