@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { prefix, author } = require("./config.json");
+const { prefix, author, version } = require("./config.json");
 const Discord = require("discord.js");
 const bytebot = new Discord.Client();
 bytebot.commands = new Discord.Collection();
@@ -20,6 +20,7 @@ bytebot.on("ready", () => {
 bytebot.on("message", (msg) => {
   const args = msg.content.split(/\s+/);
   const message = msg.content;
+  let list = bytebotCommands;
   // const regex = /(!)(\b(bit|coin)\b)/ig;
   
   for (item in bytebotCommands) {
@@ -42,12 +43,7 @@ bytebot.on("message", (msg) => {
           if (!bytebot.commands.has(command)) return;
 
           try {
-             if (command === 'help') {
-               let list = bytebotCommands;
-               bytebot.commands.get(command).execute(msg, list, prefix);
-             } else {
-              bytebot.commands.get(command).execute(msg, args);
-              }
+              bytebot.commands.get(command).execute(msg, args, list, prefix, message, version);
           } catch (error) {
             console.error(error);
             msg.reply('There was an error trying to execute that command!');

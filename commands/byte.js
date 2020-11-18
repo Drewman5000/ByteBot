@@ -13,7 +13,7 @@ module.exports = {
 			publish = choices.yes[coinFlip(0, 4)];
 		}
 
-		reply = result ? "Yes. " + publish : "No. " + publish;
+		reply = result ? "Yes. :bitYes: " + publish : "No. :bitNo: " + publish;
 
 		msg.channel.send(reply);
 	},
