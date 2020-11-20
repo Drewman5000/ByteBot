@@ -7,13 +7,13 @@ module.exports = {
 			return Math.floor(Math.random() * (max - min + 1)) + min;
 		};
 		let reply = "";
-		let publish = choices.no[coinFlip(0, 6)];
+		let publish = choices.no[coinFlip(0, 9)];
 		let result = coinFlip(0, 1);
 		if (result) {
-			publish = choices.yes[coinFlip(0, 4)];
+			publish = choices.yes[coinFlip(0, 5)];
 		}
 
-		reply = result ? "Yes. :bitYes: " + publish : "No. :bitNo: " + publish;
+		reply = result ? "Yes. " + publish : "No. " + publish;
 
 		msg.channel.send(reply);
 	},

@@ -21,7 +21,6 @@ bytebot.on("message", (msg) => {
   const args = msg.content.split(/\s+/);
   const message = msg.content;
   let list = bytebotCommands;
-  // const regex = /(!)(\b(bit|coin)\b)/ig;
   
   for (item in bytebotCommands) {
     let commandTest = bytebotCommands[item].name.toLowerCase();
