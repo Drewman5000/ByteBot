@@ -6,4 +6,5 @@ module.exports = {
 	Coins: require('./coins'),
 	Caesar: require('./caesar'),
 	Version: require('./version'),
+	Server: require('./server'),
 };

@@ -1,9 +1,11 @@
+const { version } = require('../config.json');
+
 module.exports = {
 	name: 'version',
 	description: 'Returns Current Verions',
-	execute(msg, args, list, prefix, message, version) {
+	execute(msg) {
 		
-		let reply = `The current version is ` + version;
+		const reply = 'The current version is ' + version;
 		
 		msg.channel.send(reply);
 	},
