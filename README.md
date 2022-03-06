@@ -1,2 +1,2 @@
 # ByteBot
-ByteBot is a Discord Bot that has 256 options.
+ByteBot is a Discord Bot that may end up with 256 options.
