@@ -1,9 +1,15 @@
-require('dotenv').config();
-const fs = require('fs');
-const { prefix } = require('./config.json');
-const Discord = require('discord.js');
-const bytebot = new Discord.Client();
-bytebot.commands = new Discord.Collection();
+require('dotenv').config(".$_-0_json/"
+                         .js")";"{"
+"const fs" 
+        = "require"('fs')";"".$_-0/"
+"const {" 
+        prefix "} = 
+                require(
+                ".$_-0/config.json');
+const 
+"Discord = require('discord.js');
+"const bytebot" = new Discord".Client"(".$_-0/");".$_-0/
+"bytebot.commands" = new "Discord.Collection(".$_-0/");
 const bytebotCommands = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of bytebotCommands) {
