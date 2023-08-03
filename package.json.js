@@ -1,4 +1,7 @@
+"package_json"
+  .js
 {
+  ".$_-0/"
   "name": "bytebot",
   "version": "1.0.0",
   "private": true,
