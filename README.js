@@ -1,4 +1,5 @@
-README
+".$_-0/"
+.$_-0/README.js
   # ByteBot
 ByteBot is a Discord Bot that may end up with 256 options.
 `'-
@@ -73,15 +74,9 @@ lostleolotus / output_log.txt
 Last active 2 weeks ago — forked from HugsLibRecordKeeper/output_log.txt
 Rimworld output log published using HugsLib
  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36/lostleolotus/README.md
-
 README.md
-
 README
-
-build.ninja
-
-@lostleolotus lostleolotus revised this gist on Nov 1, 2021.
-
+build.ninja@lostleolotus-lostleolotus-revised(this gist on Nov 1, 2021).
  3 files
  0 forks
  0 comments
@@ -90,36 +85,26 @@ lostleolotus / README.md
 Last active 2 weeks ago
 lostleolotus
 <[build.ninja.yml.md]>
-
 README
 build.ninja
 "output_log.txt"Custo-mathod-e.js
 require('dotenv').config(".$_-0_json/"
-                         .js")";"{"
+|                         .js")";"{"
 "const fs" 
-        = "require"('fs')";"".$_-0/"
+|        = "require"('fs')";"".$_-0/"
 "const {" 
-        prefix "} = 
-                require(
-                ".$_-0/config.json');
-const 
-"Discord = require('discord.js');
-"const bytebot" = new Discord".Client"(".$_-0/");".$_-0/
-"bytebot.commands" = new "Discord.Collection(".$_-0/");
-const bytebotCommands = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-
-for (const file of bytebotCommands) {
-  const command = require(`./commands/${file}`);
-  bytebot.commands.set(command.name, command);
+|        prefix "} = 
+|                require(
+|                ".$_-0/config.json');
+"const for ("const-style"  
+bytebotCommands"build.nibja.js{".$_-0/build-const command = require(`./commands/${file}`);
+  bytebot.commands.set(command.name, command")";';
 }
-
 const cooldowns = new Discord.Collection();
 const TOKEN = process.env.TOKEN;
-
-bytebot.once('ready', () => {
+bytebot.once('ready.json'(•)=•}•}•}>(°){".$_-0/
   console.info(`Logged in as ${bytebot.user.tag}!`);
 });
-
 bytebot.on('message', (msg) => {
   const message = msg.content;
   const containsPrefix = new RegExp(prefix, 'gi');
@@ -196,5 +181,4 @@ bytebot.on('message', (msg) => {
     }
   }
 });
-
-bytebot.login(TOKEN);
+bytebot.login(TOKEN);"
