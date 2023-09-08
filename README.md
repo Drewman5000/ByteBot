@@ -5,7 +5,7 @@
   - NinjaByte-Bot.js is my personal modification.
 `"ninja.bytebot_build.ninjabyte-bot.js"
 ```
-".$_-0/build.ninja.js
+`".$_-0/build.ninja.js
 build.NinjaByte-Bot.js
 README
 config_build.ninja.js
@@ -196,4 +196,4 @@ bytebot.on('message', (msg) => {
   }
 });
 ```
-bytebot.login(TOKEN);
+bytebot.login(TOKEN);"`
