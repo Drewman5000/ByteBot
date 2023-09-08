@@ -1,4 +1,11 @@
-"build.ninja.bytebot.js-build.ninja"/#"
+".$_-0/build.ninja.js
+build.NinjaByte-Bot.js
+README
+config_build.ninja.js
+build.config-run.NinjaByte-Bot.js
+README
+output_log.txt"`
+"build.ninja.bytebot.js-build.ninja"
 "output_log.txt"`Custo-mathod-e.js
 push"@adrianhajdin/Customizer.jsx~#".$_-0/build.Custo-mathod-e.js
 push"@adrianhajdin/Customizer.jsxCusto-mathod-e.js
@@ -14,7 +21,7 @@ lostleolotus / Method-e.js Secret
 Last active 1 minute ago
 CusTo-Mathodizer_json-java.js
 lostleolotus/Custo-mathod-e.js
-push"@adrianhajdin/Customizer.jsx
+pull"@adrianhajdin/Customizer.jsx
 # "Code Revisions
 "Revisions
 ".$_-0/build_method-e"
