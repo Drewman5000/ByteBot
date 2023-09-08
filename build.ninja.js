@@ -1,9 +1,17 @@
-"build.ninja.bytebot.js-build.ninja"/#"
-"output_log.txt"`Custo-mathod-e.js
-push"@adrianhajdin/Customizer.jsx~#".$_-0/build.Custo-mathod-e.js
-push"@adrianhajdin/Customizer.jsxCusto-mathod-e.js
-push"@adrianhajdin/Customizer.jsx~#".$_-0/build.Custo-mathod-e.js
-push"@adrianhajdin/Customizer.jsxAll 
+`".$_-0/build.ninja.js
+build.NinjaByte-Bot.js
+README
+config_build.ninja.js
+build.config-run.NinjaByte-Bot.js
+README
+output_log.txt"`
+"build.ninja.bytebot.js-build.ninja"
+"output_log.txt"
+main
+pull"@adrianhajdin/Customizer.jsx~#".$_-0/build.Custo-mathod-e.js
+pull"@adrianhajdin/Customizer.jsxCusto-mathod-e.js
+pull"@adrianhajdin/Customizer.jsx~#".$_-0/build.Custo-mathod-e.js
+pull"@adrianhajdin/Customizer.jsxAll 
 gists-5-|
 | __--..//Forked_3
 | 1 file
@@ -14,7 +22,7 @@ lostleolotus / Method-e.js Secret
 Last active 1 minute ago
 CusTo-Mathodizer_json-java.js
 lostleolotus/Custo-mathod-e.js
-push"@adrianhajdin/Customizer.jsx
+pull"@adrianhajdin/Customizer.jsx
 # "Code Revisions
 "Revisions
 ".$_-0/build_method-e"
@@ -26,8 +34,8 @@ push"@adrianhajdin/Customizer.jsx
  0 forks
  0 comments
  0 stars
-lostleolotus / Custo-mathod-e.js
-Last active 16 minutes ago — forked from adrianhajdin/Customizer.jsx
+lostleolotus/pull@Custo-mathod-e.js
+@adrianhajdin/Customizer.jsx
 Build and Deploy an AI-Powered 3D Website Using React | 2023 Three JS Course Tutorial for Beginners
 ".$_-*/button_className""👇👆"=("👇-down)(👆👆-L")'methodod-e".js"
 `|||•]
@@ -95,8 +103,10 @@ require('dotenv').config(".$_-0_json/"
                 ".$_-0/config.json');
 const 
 "Discord = require('discord.js');
-"const bytebot" = new Discord".Client"(".$_-0/");".$_-0/
-"bytebot.commands" = new "Discord.Collection(".$_-0/");
+"const bytebot" = new Discord".Client"(".$_-0/");
+".$_-0/NinjaByte-Bot.js
+"bytebot.commands" = 
+new "Discord.Collection(".$_-0/run-Ninjabyte-Bot.js");
 const bytebotCommands = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of bytebotCommands) {
@@ -131,8 +141,7 @@ bytebot.on('message', (msg) => {
     while ((m = regexp.exec(message)) !== null) {
       // This is necessary to avoid infinite loops with zero-width matches
       if (m.index === regexp.lastIndex) {
-        regexp.lastIndex++;
-      }
+        regexp.lastIndex+m+-;
       // The result can be accessed through the `m`-variable.
       m.forEach((match, groupIndex) => {
         if (groupIndex === 2) {
@@ -188,4 +197,4 @@ bytebot.on('message', (msg) => {
   }
 });
 
-bytebot.login(TOKEN);
+bytebot.login(TOKEN);"`
