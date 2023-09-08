@@ -108,20 +108,15 @@ const
 "bytebot.commands" = 
 new "Discord.Collection(".$_-0/run-Ninjabyte-Bot.js");
 const bytebotCommands = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-
-for (const file of bytebotCommands) {
-  const command = require(`./commands/${file}`);
+for 
+ (const file of bytebotCommands) {const command = require(`./commands/${file}`);
   bytebot.commands.set(command.name, command);
-}
-
-const cooldowns = new Discord.Collection();
+}const cooldowns = new Discord.Collection();
 const TOKEN = process.env.TOKEN;
 
-bytebot.once('ready', () => {
-  console.info(`Logged in as ${bytebot.user.tag}!`);
-});
-
-bytebot.on('message', (msg) => {
+bytebot.once('ready', 
+             () => {console.info(`Logged in as ${bytebot.user.tag});bytebot.on('message', 
+              (msg) => {
   const message = msg.content;
   const containsPrefix = new RegExp(prefix, 'gi');
   const checkMessage = containsPrefix.exec(message);
@@ -137,37 +132,16 @@ bytebot.on('message', (msg) => {
     const commandIndex = args.indexOf(args.find((arg) => { return arg === commandTest;}));
     const nextWord = args[commandIndex + 1];
     let m;
-
     while ((m = regexp.exec(message)) !== null) {
       // This is necessary to avoid infinite loops with zero-width matches
       if (m.index === regexp.lastIndex) {
         regexp.lastIndex+m+-;
       // The result can be accessed through the `m`-variable.
-      m.forEach((match, groupIndex) => {
-        if (groupIndex === 2) {
-          const commandName = match.toLowerCase();
-          console.info(`Called command: ${commandName}`);
-          // check command list against the regex match commandName
-          const command = bytebot.commands.get(commandName) || bytebot.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
-          // if there's no command, exit.
-          if (!command) return;
-
-          if (command.guildOnly && msg.channel.type === 'dm') {
-            return msg.reply('I can\'t execute that command inside DMs!');
+      m.forEach((match, groupIndex) => { check command list against the regex match commandName
+          const command = bytebot.commands.get;
+          (commandName) || bytebot.commands.find(cmd => cmd.aliases && cmd.aliases.includes;
+          (commandName)); (if there's no command, exit).
           }
-
-          if (command.args && !nextWord) {
-            let reply = `You didn't provide any arguments, ${msg.author}!`;
-            if (command.usage) {
-              reply += `\nThe proper usage would be: \`${prefix}${command.name} ${command.usage}\``;
-            }
-            return msg.channel.send(reply);
-          }
-
-          if (!cooldowns.has(command.name)) {
-            cooldowns.set(command.name, new Discord.Collection());
-          }
-
           const now = Date.now();
           const timestamps = cooldowns.get(command.name);
           const cooldownAmount = (command.cooldown || 3) * 1000;
