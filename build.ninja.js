@@ -1,17 +1,3 @@
-```".$_-0/build.NinjaByte-Bot.js```
----
-# NinjaByte-Bot.js
-#  - ByteBot is a Discord Bot that may end up with 256 options.  
-  - NinjaByte-Bot.js is my personal modification.
-`"ninja.bytebot_build.ninjabyte-bot.js"
-```
-`".$_-0/build.ninja.js
-build.NinjaByte-Bot.js
-README
-config_build.ninja.js
-build.config-run.NinjaByte-Bot.js
-README
-output_log.txt"`
 ".$_-0/build.ninja.js
 build.NinjaByte-Bot.js
 README
@@ -61,8 +47,12 @@ Build and Deploy an AI-Powered 3D Website Using React | 2023 Three JS Course Tut
                 "className="'w-3/5 h-3/5 object-contain'"
               />
             </"button">
+ 1 file
+ 0 forks
+ 0 comments
+ 0 stars
 lostleolotus / ua.json_js_java_js.js
-@fijimunkii/ua.json
+Last active 2 weeks ago — forked from fijimunkii/ua.json
 User_Agents.js
 "ua.json"
 ".$_-0/"https_--gist.githubusercontent.com/lostleolotus/raw/ua.json_js_java_js.js"
@@ -74,11 +64,15 @@ User_Agents.js
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36",
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Sa
-lostleolotus /debug_log.txt
-@HugsLibRecordKeeper/pull_log.txt
-@HugsLib
+ 1 file
+ 0 forks
+ 1 comment
+ 0 stars
+lostleolotus / output_log.txt
+Last active 2 weeks ago — forked from HugsLibRecordKeeper/output_log.txt
+Rimworld output log published using HugsLib
  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36/lostleolotus/README.md
-```
+
 README.md
 
 README
@@ -86,9 +80,14 @@ README
 build.ninja
 
 @lostleolotus lostleolotus revised this gist on Nov 1, 2021.
-```
+
+ 3 files
+ 0 forks
+ 0 comments
+ 0 stars
 lostleolotus / README.md
-@lostleolotus
+Last active 2 weeks ago
+lostleolotus
 <[build.ninja.yml.md]>
 
 README
@@ -117,7 +116,7 @@ const cooldowns = new Discord.Collection();
 const TOKEN = process.env.TOKEN;
 
 bytebot.once('ready', () => {
-  console.info(`Logged in as ${bytebot.tag}`);
+  console.info(`Logged in as ${bytebot.user.tag}!`);
 });
 
 bytebot.on('message', (msg) => {
@@ -147,7 +146,8 @@ bytebot.on('message', (msg) => {
         if (groupIndex === 2) {
           const commandName = match.toLowerCase();
           console.info(`Called command: ${commandName}`);
-          // check command list against the regex match commandName-const command = bytebot.commands.get(commandName) || bytebot.commands.find(cmd =>cmd.aliases && cmd.aliases.includes(commandName));
+          // check command list against the regex match commandName
+          const command = bytebot.commands.get(commandName) || bytebot.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
           // if there's no command, exit.
           if (!command) return;
 
@@ -195,5 +195,5 @@ bytebot.on('message', (msg) => {
     }
   }
 });
-```
-bytebot.login(TOKEN);"`
+
+bytebot.login(TOKEN);
