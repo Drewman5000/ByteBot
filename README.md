@@ -111,10 +111,7 @@ const cooldowns = new Discord.Collection();
 const TOKEN = process.env.TOKEN;
 
 bytebot.once('ready', () => {
-  console.info(`Logged in as ${bytebot.tag}`);
-});
-```
-bytebot.on('message', (msg) => {
+  console.info(`Logged in as ${bytebot.tag}`);bytebot.on('message', (msg) => {
   const message = msg.content;
   const containsPrefix = new RegExp(prefix, 'gi');
   const checkMessage = containsPrefix.exec(message);
@@ -145,50 +142,31 @@ bytebot.on('message', (msg) => {
           || bytebot.commands.find(cmd =>cmd.aliases && cmd.aliases.includes(commandName));
           // if there's no command, exit.
           if (!command) return;
-
           if (command.guildOnly && msg.channel.type === 'dm') {
             return msg.reply('I can\'t execute that command inside DMs!');
-          }
-
-          if (command.args && !nextWord) {
+          }    if (command.args && !nextWord) {
             let reply = `You didn't provide any arguments, ${msg.author}!`;
             if (command.usage) {
               reply += `\nThe proper usage would be: \`${prefix}${command.name} ${command.usage}\``;
             }
             return msg.channel.send(reply);
-          }
-
-          if (!cooldowns.has(command.name)) {
+          }   if (!cooldowns.has(command.name)) {
             cooldowns.set(command.name, new Discord.Collection());
-          }
-
-          const now = Date.now();
+          }    const now = Date.now();
           const timestamps = cooldowns.get(command.name);
           const cooldownAmount = (command.cooldown || 3) * 1000;
-
           if (timestamps.has(msg.author.id)) {
             const expirationTime = timestamps.get(msg.author.id) + cooldownAmount;
-
-            if (now < expirationTime) {
+          if (now < expirationTime) {
               const timeLeft = (expirationTime - now) / 1000;
               return msg.reply(`Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`);
             }
-          }
-
-          timestamps.set(msg.author.id, now);
-          setTimeout(() => timestamps.delete(msg.author.id), cooldownAmount);
-
-          try {
+          } timestamps.set(msg.author.id, now); setTimeout(() => timestamps.delete(msg.author.id), cooldownAmount);
+   try {
             command.execute(msg, args);
           }
           catch (error) {
             console.error(error);
             msg.reply('There was an error trying to execute that command!');
-          }
-        }
-      });
-    }
-  }
-});
-```
 bytebot.login(TOKEN);"`
+```
