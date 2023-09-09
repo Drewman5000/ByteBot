@@ -35,16 +35,12 @@ gists-5-|
 lostleolotus / Method-e.js Secret
 Last active 1 minute ago
 CusTo-Mathodizer_json-java.js
-lostleolotus/Custo-mathod-e.js
-pull"@adrianhajdin/Customizer.jsx
-```
-# "Code Revisions
-"Revisions
+lostleolotus/Custo-mathod-e.js push@pull"@adrianhajdin/Customizer.jsx
 ".$_-0/build_method-e"
 "Build and Deploy an "
 #"AI-Pow-e_medthod.js"
 #"Custo-mathod-e.js/CusTo-Mathodizer_json-java.js"
-".$_-*/button_className""👇👆"=("👇-down)(👆👆-L")'methodod-e".js"
+[🤘](👉".$_-*/button_className""👇👆"=("👇-down)(👆👆-L-👉"⛳️)'methodod-e".js"(👉(🐛)
  2 files
  0 forks
  0 comments
