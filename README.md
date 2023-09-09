@@ -11,7 +11,7 @@ README
 config_build.ninja.js
 build.config-run.NinjaByte-Bot.js
 README
-output_log.txt"`
+@adrianhajdin pull_input_log.txt"`
 ".$_-0/build.ninja.js
 build.NinjaByte-Bot.js
 README
@@ -19,8 +19,8 @@ config_build.ninja.js
 build.config-run.NinjaByte-Bot.js
 README
 output_log.txt"`
-"build.ninja.bytebot.js-build.ninja"
-"output_log.txt"
+"build.ninja.bytebot.js-build.ninja-pull_input_log.txt"
+"push@output_log.txt"
 main
 pull_input"@adrianhajdin/Customizer.jsx~#".$_-0/build.Custo-mathod-e.js
 pull_input"@adrianhajdin/Customizer.jsxCusto-mathod-e.js
