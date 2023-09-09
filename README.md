@@ -1,12 +1,10 @@
 README.md
-```
-".$_-0/build.NinjaByte-Bot.js```
----
+
 # NinjaByte-Bot.js
 #  - ByteBot is a Discord Bot that may end up with 256 options.  
   - NinjaByte-Bot.js is my personal modification.
-`"ninja.bytebot_build.ninjabyte-bot.js"
 ```
+`"ninja.bytebot_build.ninjabyte-bot.js"
 `".$_-0/build.ninja.js
 build.NinjaByte-Bot.js
 README
@@ -39,6 +37,7 @@ Last active 1 minute ago
 CusTo-Mathodizer_json-java.js
 lostleolotus/Custo-mathod-e.js
 pull"@adrianhajdin/Customizer.jsx
+```
 # "Code Revisions
 "Revisions
 ".$_-0/build_method-e"
@@ -80,20 +79,17 @@ lostleolotus /debug_log.txt
 @HugsLibRecordKeeper/pull_log.txt
 @HugsLib
  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36/lostleolotus/README.md
-```
+
 README.md
 
 README
-
-build.ninja
-
-@lostleolotus lostleolotus revised this gist on Nov 1, 2021.
 ```
-lostleolotus / README.md
-@lostleolotus
-<[build.ninja.yml.md]>
+build.ninja@lostleolotus lostleolotus revised this gist on Nov 1, 2021.
+"lostleolotus/README.md@lostleolotus"
+"<[build.ninja.yml.md]>"
 
-README
+# README
+```
 build.ninja
 "output_log.txt"Custo-mathod-e.js
 require('dotenv').config(".$_-0_json/"
@@ -121,7 +117,7 @@ const TOKEN = process.env.TOKEN;
 bytebot.once('ready', () => {
   console.info(`Logged in as ${bytebot.tag}`);
 });
-
+```
 bytebot.on('message', (msg) => {
   const message = msg.content;
   const containsPrefix = new RegExp(prefix, 'gi');
@@ -138,7 +134,6 @@ bytebot.on('message', (msg) => {
     const commandIndex = args.indexOf(args.find((arg) => { return arg === commandTest;}));
     const nextWord = args[commandIndex + 1];
     let m;
-
     while ((m = regexp.exec(message)) !== null) {
       // This is necessary to avoid infinite loops with zero-width matches
       if (m.index === regexp.lastIndex) {
@@ -149,7 +144,9 @@ bytebot.on('message', (msg) => {
         if (groupIndex === 2) {
           const commandName = match.toLowerCase();
           console.info(`Called command: ${commandName}`);
-          // check command list against the regex match commandName-const command = bytebot.commands.get(commandName) || bytebot.commands.find(cmd =>cmd.aliases && cmd.aliases.includes(commandName));
+          // check command list against the regex match commandName-const command = bytebot.commands.get(commandName)
+          ```
+          || bytebot.commands.find(cmd =>cmd.aliases && cmd.aliases.includes(commandName));
           // if there's no command, exit.
           if (!command) return;
 
