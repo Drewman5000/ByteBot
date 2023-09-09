@@ -1,5 +1,6 @@
 README.md
-```".$_-0/build.NinjaByte-Bot.js```
+```
+".$_-0/build.NinjaByte-Bot.js```
 ---
 # NinjaByte-Bot.js
 #  - ByteBot is a Discord Bot that may end up with 256 options.  
