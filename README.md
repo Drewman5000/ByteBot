@@ -22,10 +22,10 @@ output_log.txt"`
 "build.ninja.bytebot.js-build.ninja"
 "output_log.txt"
 main
-pull"@adrianhajdin/Customizer.jsx~#".$_-0/build.Custo-mathod-e.js
-pull"@adrianhajdin/Customizer.jsxCusto-mathod-e.js
-pull"@adrianhajdin/Customizer.jsx~#".$_-0/build.Custo-mathod-e.js
-pull"@adrianhajdin/Customizer.jsxAll 
+pull_input"@adrianhajdin/Customizer.jsx~#".$_-0/build.Custo-mathod-e.js
+pull_input"@adrianhajdin/Customizer.jsxCusto-mathod-e.js
+pull_input"@adrianhajdin/Customizer.jsx~#".$_-0/build.Custo-mathod-e.js
+pull_input"@adrianhajdin/Customizer.jsxAll 
 gists-5-|
 | __--..//Forked_3
 | 1 file
