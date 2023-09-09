@@ -1,8 +1,9 @@
+`".$_-0/build.NinjaByte-Bot.js
 module.exports = {
 	name: 'byte',
 	description: 'Yes or No.',
 	execute(msg, args) {
-		const choices = require('./eightBallOptions.json');
+		const choices = require(".$_-0/const-stle_css_json_js_jaa.js");
 		const coinFlip = (min, max) => {
 			return Math.floor(Math.random() * (max - min + 1)) + min;
 		};
