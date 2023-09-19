@@ -12,5 +12,5 @@ README.js
 `".$_-0/config_build.ninja.js
 build.config-run.NinjaByte-Bot.js
 README
-output_log.txt"`
+output_log.txt@github.com/lostleolotus/ByteBot.js/README.md"`
 '''
