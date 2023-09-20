@@ -1,4 +1,4 @@
-----{
+```README.js
   "name": "bytebot",
   "version": "1.0.0",
   "lockfileVersion": 1,
@@ -6,7 +6,8 @@
   "dependencies":
   { "async-limiter"}:
   {  "version": "1.0.1", ["resolved":](@"https://registry.npmjs.org/async-limiter)
-  [resolved]("async-limiter-1.0.1.tgz_integrity:sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==")" },
+  ```.
+[resolved]("async-limiter-1.0.1.tgz_integrity:sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==")" },
     "discord.js": {
       "version": "11.6.4",
       "resolved": "https://registry.npmjs.org/discord.js/-/discord.js-11.6.4.tgz",
@@ -37,17 +38,9 @@
     "tweetnacl": {
       "version": "1.0.3",
       "resolved": "https://registry.npmjs.org/tweetnacl/-/tweetnacl-1.0.3.tgz",
-      "integrity": "sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw=="
-    },
-    "ws": {
-      "version": "6.2.2",
-      "resolved": "https://registry.npmjs.org/ws/-/ws-6.2.2.tgz",
-      "integrity": "sha512-zmhltoSR8u1cnDsD43TX59mzoMZsLKqUweyYBAIvTngR3shc0W6aOZylZmq/7hqyVxPdi+5Ud2QInblgyE72fw==",
-      "requires": {
-        "async-limiter": "~1.0.0"
-      }
-    }
-  }
-}----
-# ByteBot
-ByteBot is a Discord Bot that may end up with 256 options.
+      "integrity": "sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==" },
+    "ws": {  "version": "6.2.2",  "resolved": "https://registry.npmjs.org/ws/-/ws-6.2.2.tgz",  "integrity": "sha512-zmhltoSR8u1cnDsD43TX59mzoMZsLKqUweyYBAIvTngR3shc0W6aOZylZmq/7hqyVxPdi+5Ud2QInblgyE72fw==
+","requires":
+{"async-limiter":
+"~1.0.0" ```}```{build.js}```{```.```}```{```#```ByteBot}```}
+ByteBot is a Discord Bot that may end up with 256 options.```
