@@ -3,26 +3,19 @@
   "version": "1.0.0",
   "lockfileVersion": 1,
   "requires": true,
-  "dependencies": {
-    "async-limiter": {
-      "version": "1.0.1",
-      "resolved": "https://registry.npmjs.org/async-limiter/-/async-limiter-1.0.1.tgz",
-      "integrity": "sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ=="
-    },
+  "dependencies":
+  { "async-limiter"}:
+  {  "version": "1.0.1", ["resolved":](@"https://registry.npmjs.org/async-limiter)
+  [resolved]("async-limiter-1.0.1.tgz_integrity:sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==")" },
     "discord.js": {
       "version": "11.6.4",
       "resolved": "https://registry.npmjs.org/discord.js/-/discord.js-11.6.4.tgz",
       "integrity": "sha512-cK6rH1PuGjSjpmEQbnpuTxq1Yv8B89SotyKUFcr4RhnsiZnfBfDOev7DD7v5vhtEyyj51NuMWFoRJzgy/m08Uw==",
-      "requires": {
-        "long": "^4.0.0",
-        "prism-media": "^0.0.4",
-        "snekfetch": "^3.6.4",
-        "tweetnacl": "^1.0.0",
-        "ws": "^6.0.0"
-      }
-    },
-    "dotenv": {
-      "version": "8.2.0",
+      "requires": { "long": "^4.0.0", "prism-media": "^0.0.4",
+        "fetch": "^3.6.4",
+        "cli": "^1.0.0",
+        "js": "^6.0.0"  }
+    "dotenv": { "version": "8.2.0",
       "resolved": "https://registry.npmjs.org/dotenv/-/dotenv-8.2.0.tgz",
       "integrity": "sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw=="
     },
